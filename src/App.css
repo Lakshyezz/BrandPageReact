@@ -1,42 +1,71 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+button{
+    all: unset;
+    padding: 6px 16px;
+    background: rgb(255, 53, 53);
+    color: white;
+    height: 32px;
+    font-weight: 500;
+    border-radius: 8px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav{
+    display: flex;
+    justify-content: space-between;
+  
+   
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    height: 72;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh-72px);
 }
-
-.card {
-  padding: 2em;
+.hero h1{
+    font-weight: 800;
+    font-size: 108px;
+    line-height: 102px;
 }
-
-.read-the-docs {
-  color: #888;
+.hero p{
+    font-weight: 600;
+    color: grey;
+    max-width: 400px;
 }
+.hero-btn{
+    display: flex;
+    gap: 40px;
+}
+.sec-btn{
+    background: transparent;
+    color: grey;
+    border: solid;
+    border-color: grey;
+}
+.shopping p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.brand-icons{
+    display: flex;
+    gap: 16px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.hero-container{
+    
+};
